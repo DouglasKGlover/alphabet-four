@@ -164,6 +164,12 @@ export default {
         _self.mousePosition.y =
           (e.clientY / innerHeight) * rotateYIntensity - rotateYIntensity / 2;
       });
+      body.addEventListener("touchmove", (e) => {
+        _self.mousePosition.x =
+          (e.clientX / innerWidth) * rotateXIntensity - rotateXIntensity / 2;
+        _self.mousePosition.y =
+          (e.clientY / innerHeight) * rotateYIntensity - rotateYIntensity / 2;
+      });
     },
     resizeRendererToDisplaySize() {
       const canvas = this.renderer.domElement;
