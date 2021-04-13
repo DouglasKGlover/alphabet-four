@@ -1,0 +1,15 @@
+{
+  "name": "nfalphabet-2021",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "gsap": "^3.6.1",
+    "postprocessing": "^6.21.3",
+    "three": "^0.127.0"
+  }
+}
