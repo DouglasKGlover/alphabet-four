@@ -166,13 +166,15 @@ export default {
       });
       body.addEventListener("touchmove", (e) => {
         _self.mousePosition.x =
-          (e.clientX / innerWidth) * rotateXIntensity - rotateXIntensity / 2;
+          (e.touches[0].clientX / innerWidth) * rotateXIntensity -
+          rotateXIntensity / 2;
         _self.mousePosition.y =
-          (e.clientY / innerHeight) * rotateYIntensity - rotateYIntensity / 2;
+          (e.touches[0].clientY / innerHeight) * rotateYIntensity -
+          rotateYIntensity / 2;
       });
     },
     resizeRendererToDisplaySize() {
-      const canvas = this.renderer.domElement;
+      // const canvas = this.renderer.domElement;
       const width = this.canvas.clientWidth;
       const height = this.canvas.clientHeight;
       const needResize =
