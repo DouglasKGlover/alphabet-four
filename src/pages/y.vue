@@ -67,11 +67,17 @@ export default {
   },
   computed: {
     xCentered() {
-      const xCentered = (Math.round((this.x / innerWidth) * 100) - 50) * 2;
+      let xCentered = 0;
+      if (process.isClient) {
+        xCentered = (Math.round((this.x / innerWidth) * 100) - 50) * 2;
+      }
       return xCentered;
     },
     yCentered() {
-      const yCentered = (Math.round((this.y / innerHeight) * 100) - 50) * 2;
+      let yCentered = 0;
+      if (process.isClient) {
+        yCentered = (Math.round((this.y / innerHeight) * 100) - 50) * 2;
+      }
       return yCentered;
     },
   },
