@@ -35,6 +35,9 @@
 
 <script>
 export default {
+  metaInfo: {
+    titleTemplate: "nfalphabet / y",
+  },
   data() {
     return {
       message: "Some text",

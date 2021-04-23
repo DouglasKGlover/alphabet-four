@@ -25,7 +25,7 @@
 <script>
 export default {
   metaInfo: {
-    titleTemplate: "4",
+    titleTemplate: "nfalphabet / 4",
   },
   data() {
     return {

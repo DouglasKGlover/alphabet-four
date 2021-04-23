@@ -11,7 +11,7 @@
 <script>
 export default {
   metaInfo: {
-    titleTemplate: "NFAlphabet / Index",
+    titleTemplate: "nfalphabet / index",
   },
 };
 </script>
