@@ -105,7 +105,7 @@ export default {
 
       // 4
       _self.loader = new _self.$GLTFLoader();
-      _self.loader.load("./4.glb", function(gltf) {
+      _self.loader.load("/4.glb", function(gltf) {
         _self.models.four = gltf.scene;
         _self.scene.add(_self.models.four);
       });
